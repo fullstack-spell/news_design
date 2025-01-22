@@ -24,8 +24,8 @@ export const HeadingMain = () => {
 
 export const HeadingTwo = () => {
     return <div className='text-theme-red flex items-center gap-2'>
-        <FaRegClock size={18} />  <h4>समाचार</h4>
+        <FaRegClock size={18} />  <h4>थप समाचार</h4>
         <hr className='border border-theme-red flex-1 w-full' />
-        <p className='font-semibold mb-1.5'>थप समाचार <span className='text-[22px] font-normal'>↗</span></p>
+        {/* <p className='font-semibold mb-1.5'>थप समाचार <span className='text-[22px] font-normal'>↗</span></p> */}
     </div>
 }

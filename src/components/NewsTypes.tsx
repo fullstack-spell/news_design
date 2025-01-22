@@ -37,7 +37,7 @@ export const RowImageNews = () => {
 }
 
 export const ListNews = () => {
-    return <div className='flex flex-col gap-2'>
+    return <div className='flex flex-col gap-2 max-w-[400px] min-w-[300px] w-full'>
         <Image src='https://nepalkhabar.prixacdn.net/media/albums/bibaha-ko-umer-story_FYl8eQxasx.png' alt='' width={200} height={200} className='rounded w-full h-[180px]' />
         <h4>बाक्लो हुस्सु लाग्दा नेपालगन्ज विमानस्थलबाट हुने उडान ठप्प</h4>
     </div>
