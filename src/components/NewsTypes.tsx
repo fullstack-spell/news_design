@@ -36,9 +36,9 @@ export const RowImageNews = () => {
     </div>
 }
 
-export const ListNews = () => {
-    return <div className={`flex flex-col gap-2 max-w-[400px] w-full min-w-[250px]`}>
-        <Image src='https://nepalkhabar.prixacdn.net/media/albums/bibaha-ko-umer-story_FYl8eQxasx.png' alt='' width={2000} height={200} className='rounded w-full h-[180px]' />
+export const ListNews = (className: { className?: string }) => {
+    return <div className={`flex flex-col gap-2 max-w-[400px]  w-full ${className ? className?.className : ''}`}>
+        <Image src="https://nepalkhabar.prixacdn.net/media/albums/bibaha-ko-umer-story_FYl8eQxasx.png" alt='' width={200} height={200} className='rounded w-full h-[200px]' />
         <h4>बाक्लो हुस्सु लाग्दा नेपालगन्ज विमानस्थलबाट हुने उडान ठप्प</h4>
     </div>
 }

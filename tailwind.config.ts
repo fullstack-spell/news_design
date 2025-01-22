@@ -20,5 +20,6 @@ export default {
             },
         },
     },
+    safelist: ['min-w-[300px]'],
     plugins: [],
 } satisfies Config;

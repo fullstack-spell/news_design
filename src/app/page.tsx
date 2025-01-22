@@ -148,8 +148,11 @@ export default function Home() {
 
       <section id="videos" className="flex flex-col gap-5 w-full">
         <HeadingMain />
-        <div className="flex items-start lg:flex-row flex-col w-full h-full gap-5 bg-theme-black p-4 rounded">
-          <iframe className="rounded flex-1 w-full lg:min-h-[435px] h-full" src="https://www.youtube.com/embed/S980-z1qx3g?si=nm3jL2vcPFZEc4va" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />
+        <div className="flex lg:flex-row flex-col w-full h-full gap-5 bg-theme-black p-4 rounded">
+          <div className="flex-1 w-full flex-col">
+            <iframe className="rounded w-full min-h-[85%]" src="https://www.youtube.com/embed/S980-z1qx3g?si=nm3jL2vcPFZEc4va" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />
+            <h3 className="text-white mt-3">बाक्लो हुस्सु लाग्दा नेपालगन्ज विमानस्थलबाट हुने उडान ठप्प</h3>
+          </div>
           <div className="max-w-[400px] text-white">
             <RowNews size="w-[130px] h-[90px]" />
           </div>
