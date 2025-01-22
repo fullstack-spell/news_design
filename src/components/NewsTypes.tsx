@@ -31,7 +31,10 @@ export const RowImageNews = () => {
         <div className='flex flex-col'>
             <Image src='https://nepalkhabar.prixacdn.net/media/albums/bibaha-ko-umer-story_FYl8eQxasx.png' alt='' width={100} height={100} className='rounded w-full max-h-[300px] ' />
             <h3 className='mt-4 mb-1 flex-1'>बाक्लो हुस्सु लाग्दा नेपालगन्ज विमानस्थलबाट हुने उडान ठप्प</h3>
-            <p>गीता चिमोरिया</p>
+            <div className='flex items-center gap-2 font-semibold'>
+                <Image src={'https://nepalkhabar.prixacdn.net/media/albums/bibaha-ko-umer-story_FYl8eQxasx.png'} alt='' width={80} height={70} className={'size-[40px] overflow-hidden rounded-full'} />
+                <p>गीता चिमोरिया</p>
+            </div>
         </div>
     </div>
 }
@@ -47,7 +50,13 @@ export const BannerNews = () => {
     return <div className='relative bg-black'>
         <Image src='https://nepalkhabar.prixacdn.net/media/albums/bibaha-ko-umer-story_FYl8eQxasx.png' alt='' width={200} height={200} className='rounded w-full max-h-[400px] opacity-70' />
 
-        <h3 className='lg:bg-transparent bg-theme-black lg:text-[2.5rem] leading-tight text-white lg:absolute bottom-0 p-4 w-full '>बाक्लो हुस्सु लाग्दा नेपालगन्ज विमानस्थलबाट हुने उडान ठप्प</h3>
+        <div className='lg:bg-transparent bg-theme-black lg:absolute bottom-0 p-4 w-full'>
+            <h3 className=' lg:text-[2.5rem] leading-tight text-white '>बाक्लो हुस्सु लाग्दा नेपालगन्ज विमानस्थलबाट हुने उडान ठप्प</h3>
+            <div className='flex items-center mt-1 gap-2 font-semibold'>
+                <Image src={'https://nepalkhabar.prixacdn.net/media/albums/bibaha-ko-umer-story_FYl8eQxasx.png'} alt='' width={80} height={70} className={'size-[30px] overflow-hidden rounded-full'} />
+                <p className='text-white'>गीता चिमोरिया</p>
+            </div>
+        </div>
     </div>
 }
 
@@ -55,23 +64,32 @@ export const RowTextNews = ({ showImage }: { showImage?: boolean }) => {
     return <div className='gap-3 flex flex-col divide-y'>
         <div className='flex items-start gap-3'>
             {showImage && <Image src='https://nepalkhabar.prixacdn.net/media/albums/bibaha-ko-umer-story_FYl8eQxasx.png' alt='' width={100} height={100} className='rounded-full size-[70px] overflow-hidden' />}
-            <div>
+            <div className='flex flex-col gap-2'>
                 <h5>बाक्लो हुस्सु लाग्दा नेपालगन्ज विमानस्थलबाट हुने उडान ठप्प</h5>
-                <p className='font-medium mt-1 text-sm'>विमानस्थलबाट</p>
+                <div className='flex items-center gap-2 font-semibold'>
+                    <Image src={'https://nepalkhabar.prixacdn.net/media/albums/bibaha-ko-umer-story_FYl8eQxasx.png'} alt='' width={80} height={70} className={'size-[30px] overflow-hidden rounded-full'} />
+                    <p>गीता चिमोरिया</p>
+                </div>
             </div>
         </div>
         <div className='flex items-start gap-3 pt-3'>
             {showImage && <Image src='https://nepalkhabar.prixacdn.net/media/albums/bibaha-ko-umer-story_FYl8eQxasx.png' alt='' width={100} height={100} className='rounded-full size-[70px] overflow-hidden' />}
-            <div>
+            <div className='flex flex-col gap-2'>
                 <h5>बाक्लो हुस्सु लाग्दा नेपालगन्ज विमानस्थलबाट हुने उडान ठप्प</h5>
-                <p className='font-medium mt-1 text-sm'>विमानस्थलबाट</p>
+                <div className='flex items-center gap-2 font-semibold'>
+                    <Image src={'https://nepalkhabar.prixacdn.net/media/albums/bibaha-ko-umer-story_FYl8eQxasx.png'} alt='' width={80} height={70} className={'size-[30px] overflow-hidden rounded-full'} />
+                    <p>गीता चिमोरिया</p>
+                </div>
             </div>
         </div>
         <div className='flex items-start gap-3 pt-3'>
             {showImage && <Image src='https://nepalkhabar.prixacdn.net/media/albums/bibaha-ko-umer-story_FYl8eQxasx.png' alt='' width={100} height={100} className='rounded-full size-[70px] overflow-hidden' />}
-            <div>
+            <div className='flex flex-col gap-2'>
                 <h5>बाक्लो हुस्सु लाग्दा नेपालगन्ज विमानस्थलबाट हुने उडान ठप्प</h5>
-                <p className='font-medium mt-1 text-sm'>विमानस्थलबाट</p>
+                <div className='flex items-center gap-2 font-semibold'>
+                    <Image src={'https://nepalkhabar.prixacdn.net/media/albums/bibaha-ko-umer-story_FYl8eQxasx.png'} alt='' width={80} height={70} className={'size-[30px] overflow-hidden rounded-full'} />
+                    <p>गीता चिमोरिया</p>
+                </div>
             </div>
         </div>
     </div>
@@ -84,6 +102,10 @@ export const BannerNewsTwo = ({ reverse }: { reverse?: boolean }) => {
         <div className='flex flex-1 w-full p-4 flex-col gap-2'>
             <h3 className=' text-white'>बाक्लो हुस्सु लाग्दा नेपालगन्ज विमानस्थलबाट हुने उडान ठप्प</h3>
             <p className=' text-white'>बाक्लो हुस्सु लाग्दा नेपालगन्ज विमानस्थलबाट हुने उडान ठप्प</p>
+            <div className='flex items-center gap-2 mt-1 font-semibold'>
+                <Image src={'https://nepalkhabar.prixacdn.net/media/albums/bibaha-ko-umer-story_FYl8eQxasx.png'} alt='' width={80} height={70} className={'size-[30px] overflow-hidden rounded-full'} />
+                <p className='text-white'>गीता चिमोरिया</p>
+            </div>
         </div>
     </div>
 }

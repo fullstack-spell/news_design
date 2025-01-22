@@ -39,7 +39,7 @@ export const NavbarHeader = () => {
     const [openNavbar, setOpenNavbar] = useState(false)
 
     return <>
-        <div className='flex relative items-center gap-5 justify-between container max-w-[1200px] lg:px-5 p-2 pb-6'>
+        <div className='flex relative items-center gap-5 justify-between container max-w-[1200px] lg:px-5 p-2'>
             <div onClick={() => setOpenNavbar(true)} className='flex items-center gap-3  cursor-pointer'>
                 <FaBarsStaggered size={30} className="text-theme-grey" />
                 <p className="lg:block hidden">मङ्गलबार, ०८ माघ २०८१</p>
@@ -52,6 +52,33 @@ export const NavbarHeader = () => {
             <div className="bg-white/35 grid place-content-center border-2 text-theme-red border-theme-red rounded-full lg:size-[50px] size-[40px]">
                 <CiUser className="lg:text-3xl text-2xl" />
             </div>
+        </div>
+
+        <div className="bg-theme-black py-1 my-2">
+            <div className="marquee-container">
+                <div className="marquee-content w-fit text-white">
+                    Welcome to GeeksforGeeks
+                </div>
+            </div>
+        </div>
+
+        <div className="flex items-center gap-5 pb-3 overflow-x-auto container max-w-[1200px] lg:px-5 px-2">
+            <p className="px-3 py-1 text-sm text-black rounded-full border shadow text-semibold">#mews</p>
+            <p className="px-3 py-1 text-sm text-black rounded-full border shadow text-semibold">#mews</p>
+            <p className="px-3 py-1 text-sm text-black rounded-full border shadow text-semibold">#mews</p>
+            <p className="px-3 py-1 text-sm text-black rounded-full border shadow text-semibold">#mews</p>
+            <p className="px-3 py-1 text-sm text-black rounded-full border shadow text-semibold">#mews</p>
+            <p className="px-3 py-1 text-sm text-black rounded-full border shadow text-semibold">#mews</p>
+            <p className="px-3 py-1 text-sm text-black rounded-full border shadow text-semibold">#mews</p>
+            <p className="px-3 py-1 text-sm text-black rounded-full border shadow text-semibold">#mews</p>
+            <p className="px-3 py-1 text-sm text-black rounded-full border shadow text-semibold">#mews</p>
+            <p className="px-3 py-1 text-sm text-black rounded-full border shadow text-semibold">#mews</p>
+            <p className="px-3 py-1 text-sm text-black rounded-full border shadow text-semibold">#mews</p>
+            <p className="px-3 py-1 text-sm text-black rounded-full border shadow text-semibold">#mews</p>
+            <p className="px-3 py-1 text-sm text-black rounded-full border shadow text-semibold">#mews</p>
+            <p className="px-3 py-1 text-sm text-black rounded-full border shadow text-semibold">#mews</p>
+            <p className="px-3 py-1 text-sm text-black rounded-full border shadow text-semibold">#mews</p>
+            <p className="px-3 py-1 text-sm text-black rounded-full border shadow text-semibold">#mews</p>-
         </div>
 
         {openNavbar &&
