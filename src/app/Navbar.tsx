@@ -1,20 +1,19 @@
 'use client'
 
 import Image from "next/image"
+import Link from "next/link"
 import { useState } from "react"
 import { CiUser } from "react-icons/ci"
 import { FaBarsStaggered } from "react-icons/fa6"
 
 const Links = () => {
     return <>
-        <p className='hover:text-white text-theme-black font-semibold duration-500 ease-in-out p-4 hover:bg-theme-red'>
-            एक्सक्लुसिभ
-        </p>
-        <p className='hover:text-white text-theme-black font-semibold duration-500 ease-in-out p-4 hover:bg-theme-red'>
-            एक्सक्लुसिभ
-        </p> <p className='hover:text-white text-theme-black font-semibold duration-500 ease-in-out p-4 hover:bg-theme-red'>
-            एक्सक्लुसिभ
-        </p>
+        <Link href={'/'} className='hover:text-white text-theme-black font-semibold duration-500 ease-in-out p-4 hover:bg-theme-red'>
+            Home
+        </Link>
+        <Link href={'/category/xcSDF'} className='hover:text-white text-theme-black font-semibold duration-500 ease-in-out p-4 hover:bg-theme-red'>
+            Category
+        </Link>
     </>
 }
 
@@ -54,7 +53,7 @@ export const NavbarHeader = () => {
 
         {openNavbar &&
             <div onClick={() => setOpenNavbar(false)} className="fixed bg-white border-l bg-black/40 top-0 z-10 shadow h-full w-full">
-                <div className="min-w-[300px] w-fit h-full bg-white shadow-lg px-2">
+                <div className="min-w-[300px] w-fit h-full shadow-lg px-2">
                     <Links />
                 </div>
             </div>
