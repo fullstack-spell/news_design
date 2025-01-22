@@ -2,16 +2,19 @@
 
 import Image from "next/image"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { useState } from "react"
 import { CiUser } from "react-icons/ci"
 import { FaBarsStaggered } from "react-icons/fa6"
 
 const Links = () => {
+    const currentpath = usePathname()
+
     return <>
-        <Link href={'/'} className='hover:text-white text-theme-black font-semibold duration-500 ease-in-out p-4 hover:bg-theme-red'>
+        <Link href={'/'} className={`hover:text-white text-theme-black font-semibold duration-500 ease-in-out p-4 hover:bg-theme-red ${currentpath === '/' ? 'bg-theme-red text-white' : ''}`}>
             Home
         </Link>
-        <Link href={'/category/xcSDF'} className='hover:text-white text-theme-black font-semibold duration-500 ease-in-out p-4 hover:bg-theme-red'>
+        <Link href={'/category/xcSDF'} className={`hover:text-white text-theme-black font-semibold duration-500 ease-in-out p-4 hover:bg-theme-red ${currentpath?.includes('/category') ? 'bg-theme-red text-white' : ''}`}>
             Category
         </Link>
     </>
