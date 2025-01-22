@@ -19,6 +19,10 @@ export const RowNews = ({ size }: { size?: string }) => {
             <Image src='https://nepalkhabar.prixacdn.net/media/albums/bibaha-ko-umer-story_FYl8eQxasx.png' alt='' width={80} height={70} className={`${size ? size : 'w-[80px] h-[70px]'} rounded`} />
             <h5 className='flex-1'>बाक्लो हुस्सु लाग्दा नेपालगन्ज विमानस्थलबाट हुने उडान ठप्प</h5>
         </div>
+        <div className='flex items-center gap-3  pt-3'>
+            <Image src='https://nepalkhabar.prixacdn.net/media/albums/bibaha-ko-umer-story_FYl8eQxasx.png' alt='' width={80} height={70} className={`${size ? size : 'w-[80px] h-[70px]'} rounded`} />
+            <h5 className='flex-1'>बाक्लो हुस्सु लाग्दा नेपालगन्ज विमानस्थलबाट हुने उडान ठप्प</h5>
+        </div>
     </div>
 }
 

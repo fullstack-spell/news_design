@@ -35,7 +35,8 @@ export default function Home() {
 
       <Ads />
 
-      <section id="list_news" className="flex w-full flex-col items-center">
+      <section id="list_news" className="flex w-full flex-col gap-5 items-center">
+        <HeadingMain />
         <div className='grid lg:grid-cols-4 grid-cols-1 gap-5 place-content-center w-full'>
           <ListNews />
           <ListNews />
@@ -61,6 +62,9 @@ export default function Home() {
               <ListNews />
               <ListNews />
               <ListNews />
+              <ListNews />
+              <ListNews />
+              <ListNews />
             </div>
           </div>
           <div className="lg:col-span-4 flex flex-col gap-8">
@@ -73,7 +77,9 @@ export default function Home() {
 
       <section id="banner_list_news" className="flex w-full flex-col items-center">
         <div className='grid lg:grid-cols-12 grid-cols-1 gap-5 place-content-center w-full'>
+
           <div className="lg:col-span-8 flex flex-col gap-5">
+            <HeadingTwo />
             <BannerNews />
             <div className="grid lg:grid-cols-3 grid-cols-1 gap-5">
               <ListNews />
@@ -82,6 +88,7 @@ export default function Home() {
             </div>
           </div>
           <div className="lg:col-span-4 w-full flex flex-col gap-5">
+            <HeadingTwo />
             <RowTextNews showImage />
             <HeadingTwo />
             <RowTextNews />
@@ -94,6 +101,7 @@ export default function Home() {
       <section id="banner_list_news_two" className="flex w-full flex-col items-center">
         <div className='grid lg:grid-cols-12 grid-cols-1 gap-5 place-content-center w-full'>
           <div className="lg:col-span-8 flex flex-col gap-5">
+            <HeadingTwo />
             <BannerNewsTwo />
             <div className="grid lg:grid-cols-3 grid-cols-1 gap-5">
               <ListNews />
@@ -102,6 +110,7 @@ export default function Home() {
             </div>
           </div>
           <div className="lg:col-span-4 w-full flex flex-col gap-5">
+            <HeadingTwo />
             <RowTextNews showImage />
             <HeadingTwo />
             <RowTextNews />
@@ -109,7 +118,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="banner_list_news_three" className="flex w-full flex-col items-center">
+      <section id="banner_list_news_three" className="flex w-full gap-5 flex-col items-center">
+        <HeadingMain />
         <div className='grid lg:grid-cols-12 grid-cols-1 gap-5 place-content-center w-full'>
           <div className="lg:col-span-8 flex flex-col gap-5">
             <BannerNewsTwo reverse />
@@ -125,19 +135,24 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="cover_image_news" className="grid w-full lg:grid-cols-4 grid-cols-1 gap-10 place-content-center">
-        <CoverImageNews />
-        <CoverImageNews />
-        <CoverImageNews />
-        <CoverImageNews />
+      <section id="cover_image_news" className="flex flex-col gap-5">
+        <HeadingMain />
+        <div className="grid w-full lg:grid-cols-4 grid-cols-1 gap-10 place-content-center">
+          <CoverImageNews />
+          <CoverImageNews />
+          <CoverImageNews />
+          <CoverImageNews />
+        </div>
       </section>
 
 
-      <section id="videos" className="flex items-start lg:flex-row flex-col w-full h-full gap-5 bg-theme-black p-4 rounded">
-
-        <iframe className="rounded flex-1 w-full lg:min-h-[435px] h-full" src="https://www.youtube.com/embed/S980-z1qx3g?si=nm3jL2vcPFZEc4va" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />
-        <div className="max-w-[400px] text-white">
-          <RowNews size="w-[130px] h-[90px]" />
+      <section id="videos" className="flex flex-col gap-5 w-full">
+        <HeadingMain />
+        <div className="flex items-start lg:flex-row flex-col w-full h-full gap-5 bg-theme-black p-4 rounded">
+          <iframe className="rounded flex-1 w-full lg:min-h-[435px] h-full" src="https://www.youtube.com/embed/S980-z1qx3g?si=nm3jL2vcPFZEc4va" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />
+          <div className="max-w-[400px] text-white">
+            <RowNews size="w-[130px] h-[90px]" />
+          </div>
         </div>
       </section>
     </main>
