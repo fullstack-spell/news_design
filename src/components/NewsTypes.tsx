@@ -47,7 +47,7 @@ export const ListNews = (className: { className?: string }) => {
 }
 
 export const BannerNews = () => {
-    return <div className='relative bg-black'>
+    return <div className='relative z-10 bg-black'>
         <Image src='https://nepalkhabar.prixacdn.net/media/albums/bibaha-ko-umer-story_FYl8eQxasx.png' alt='' width={200} height={200} className='rounded w-full max-h-[400px] opacity-70' />
 
         <div className='lg:bg-transparent bg-theme-black lg:absolute bottom-0 p-4 w-full'>
