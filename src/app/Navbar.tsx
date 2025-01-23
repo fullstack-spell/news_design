@@ -82,8 +82,8 @@ export const NavbarHeader = () => {
         </div>
 
         {openNavbar &&
-            <div onClick={() => setOpenNavbar(false)} className="fixed bg-white border-l bg-black/40 top-0 z-10 shadow h-full w-full">
-                <div className="min-w-[300px] w-fit h-full shadow-lg px-2">
+            <div onClick={() => setOpenNavbar(false)} className="fixed border-l bg-black/40 top-0 z-50 shadow h-full w-full">
+                <div className="min-w-[300px] flex flex-col pt-2  bg-white w-fit h-full shadow-lg px-2">
                     <Links />
                 </div>
             </div>

@@ -29,7 +29,7 @@ export default function RootLayout({
           <NavbarHeader />
         </header>
 
-        <nav className='border-t-2 sticky top-0 z-50 bg-white border-theme-red w-full'>
+        <nav className='border-t-2 sticky top-0 z-40 bg-white border-theme-red w-full'>
           <Navbar />
         </nav>
         {children}
